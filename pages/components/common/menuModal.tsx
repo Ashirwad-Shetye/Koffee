@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { IoClose } from "react-icons/io5";
 import { motion } from "framer-motion";
+import { BiSearchAlt } from "react-icons/bi";
 
 const itemVariants = {
   closed: {
@@ -67,6 +68,23 @@ function MenuModal({ setMenuModalOpen }: any) {
           <IoClose />
         </div>
       </div>
+      <motion.div
+        initial="closed"
+        animate="open"
+        exit="closed"
+        variants={sideVariants}
+        className="bg-mainBlue w-10/12 mx-auto h-10 rounded-full flex items-center"
+      >
+        <div className="text-xl text-gray-600 mx-5">
+          <BiSearchAlt />
+        </div>
+        <input
+          type="text"
+          maxLength={80}
+          placeholder="Search here..."
+          className="bg-transparent h-10 rounded-r-full w-full focus:outline-none focus:ring-1 focus:ring-transparent pr-5"
+        />
+      </motion.div>
       <motion.div
         initial="closed"
         animate="open"
