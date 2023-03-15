@@ -15,14 +15,16 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className="h-fit w-screen relative">
-        <div className="mx-auto">
-          <div className="mx-5 flex flex-col space-y-5">
+      <main className="h-fit m-0">
+        <div className="">
+          {/* Nav block */}
+          <section className="mx-5 h-fit border">
             <Nav />
-            <div className="bg-gray-100 rounded-xl min-h-[200px] h-fit flex justify-center items-center">
+            <div className="bg-gray-100 rounded-xl mt-5 min-h-[200px] max-h-fit flex justify-center items-center">
               <div className="p-5 space-y-5">
-                <div className="text-4xl font-semibold">
-                  Find Your Trailblazing Style With Our New Collection
+                <div className="text-4xl font-bold">
+                  Find Your
+                  <br /> Trailblazing Style With <br /> Our New Collection
                 </div>
                 <p className="text-gray-500">
                   Shop Our Latest Collection And Discover The Perfect Blend Of
@@ -31,7 +33,35 @@ export default function Home() {
                 </p>
               </div>
             </div>
-          </div>
+            <div className="grid grid-flow-dense grid-rows-2 md:grid-rows-none md:grid-cols-2 mt-5 gap-5">
+              <div className="relative rounded-xl h-48 md:h-64 bg-cover bg-center bg-hero3 hover:scale-105 duration-150 overflow-hidden">
+                <div className="absolute bottom-0 w-full bg-gradient-to-t from-black to-transparent h-28 flex items-center">
+                  <div className="mx-5 text-white space-y-2">
+                    <h2 className="text-xl font-bold">Season Specials</h2>
+                    <p className="text-sm text-gray-300">
+                      Experience the Latest Fashion Trends at Our Season Special
+                      collection!
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div className="relative rounded-xl h-48 md:h-64 bg-cover bg-bottom bg-hero2 hover:scale-105 duration-150 overflow-hidden">
+                <div className="absolute bottom-0 w-full bg-gradient-to-t from-black to-transparent h-28 flex items-center">
+                  <div className="mx-5 text-white space-y-2">
+                    <h2 className="text-xl font-bold">Step into Challenge</h2>
+                    <p className="text-sm text-gray-300">
+                      Discover Our Latest Collection of Practical and
+                      Comfortable Clothes!
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          {/* Large view block */}
+          {/* <section className="">
+            <div className="bg-hero1 bg-cover bg-center rounded-xl h-40 w-4/12"></div>
+          </section> */}
         </div>
       </main>
     </>

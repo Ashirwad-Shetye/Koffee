@@ -16,6 +16,11 @@ module.exports = {
       textColor: {
         textBlue1: "#539BB5",
       },
+      backgroundImage: {
+        hero1: `url('/images/hero1.jpg')`,
+        hero2: `url('/images/hero2.jpg')`,
+        hero3: `url('/images/hero3.jpg')`,
+      },
     },
   },
   plugins: [],
