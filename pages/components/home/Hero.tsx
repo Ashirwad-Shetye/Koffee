@@ -19,7 +19,8 @@ function Hero() {
           </div>
         </div>
         <div className="grid grid-flow-dense grid-rows-2 md:grid-rows-none md:grid-cols-2 mt-5 gap-5 row-span-1">
-          <div className="relative rounded-xl bg-cover bg-center bg-hero3 h-full cursor-pointer select-none overflow-hidden">
+          <div className="relative rounded-xl h-full cursor-pointer select-none overflow-hidden">
+            <div className="bg-cover bg-center bg-hero3 h-full hover:scale-105 duration-150"></div>
             <div className="absolute bottom-0 w-full bg-gradient-to-t from-black to-transparent h-28 flex items-center">
               <div className="mx-5 text-white space-y-2">
                 <h2 className="text-xl font-bold">Season Specials</h2>
@@ -30,7 +31,8 @@ function Hero() {
               </div>
             </div>
           </div>
-          <div className="relative rounded-xl bg-cover bg-bottom bg-hero2 h-full cursor-pointer select-none overflow-hidden">
+          <div className="relative rounded-xl h-full cursor-pointer select-none overflow-hidden">
+            <div className="bg-cover hover:bg-scale-105 bg-bottom bg-hero2 h-full hover:scale-105 duration-150"></div>
             <div className="absolute bottom-0 w-full bg-gradient-to-t from-black to-transparent h-28 flex items-center">
               <div className="mx-5 text-white space-y-2">
                 <h2 className="text-xl font-bold">Step into Challenge</h2>
@@ -43,7 +45,8 @@ function Hero() {
           </div>
         </div>
       </div>
-      <div className="row-span-2 lg:row-span-6 lg:col-span-2 relative h-full bg-cover bg-hero1 bg-center rounded-xl cursor-pointer select-none overflow-hidden">
+      <div className="row-span-2 lg:row-span-6 lg:col-span-2 relative h-full rounded-xl cursor-pointer select-none overflow-hidden">
+        <div className="bg-cover hover:bg-scale-105 bg-center bg-hero1 h-full hover:scale-105 duration-150"></div>
         <div className="absolute bottom-0 w-full bg-gradient-to-t from-black to-transparent h-28 flex items-center">
           <div className="mx-5 text-white space-y-2">
             <h2 className="text-xl font-bold">Snacks for Recharge</h2>
