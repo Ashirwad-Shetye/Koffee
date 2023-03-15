@@ -66,8 +66,8 @@ export default function Home() {
                 <div className="mx-5 text-white space-y-2">
                   <h2 className="text-xl font-bold">Snacks for Recharge</h2>
                   <p className="text-sm text-gray-300">
-                    Pack the best snack bars with energy in multiple flavors for
-                    your next hike!
+                    Grab Our Best Protien bars filled with Energy and in
+                    Multiple Flavors for Your Next Hike!
                   </p>
                 </div>
               </div>
