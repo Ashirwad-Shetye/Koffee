@@ -25,10 +25,10 @@ const sideVariants = {
 };
 
 const menuLinks = [
-  { path: "/", title: "home" },
-  { path: "/", title: "product" },
-  { path: "/", title: "about" },
-  { path: "/", title: "contact" },
+  { path: "/", title: "Home" },
+  { path: "/", title: "Product" },
+  { path: "/", title: "About" },
+  { path: "/", title: "Contact" },
 ];
 
 function MenuModal() {

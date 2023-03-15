@@ -16,8 +16,22 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className="h-fit w-screen relative">
-        <div className="mx-auto ">
-          <Nav />
+        <div className="mx-auto">
+          <div className="mx-5 flex flex-col space-y-5">
+            <Nav />
+            <div className="bg-gray-100 rounded-xl min-h-[200px] h-fit flex justify-center items-center">
+              <div className="p-5 space-y-5">
+                <div className="text-4xl font-semibold">
+                  Find Your Trailblazing Style With Our New Collection
+                </div>
+                <p className="text-gray-500">
+                  Shop Our Latest Collection And Discover The Perfect Blend Of
+                  Comfort And Performance For Your Hiking Needs. Find Your New
+                  Must-Have Apparels Of The Season.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </main>
     </>
