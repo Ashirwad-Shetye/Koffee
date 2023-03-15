@@ -11,7 +11,7 @@ module.exports = {
   theme: {
     extend: {
       backgroundColor: {
-        mainBlue: "#BAE4FA",
+        navGreen: "#cfffc3",
       },
       textColor: {
         textBlue1: "#539BB5",

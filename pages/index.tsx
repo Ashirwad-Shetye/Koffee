@@ -2,11 +2,11 @@ import Head from "next/head";
 import { Inter } from "next/font/google";
 import Nav from "./components/common/Nav";
 import { useState } from "react";
+import Hero from "./components/home/Hero";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
-  const [menuModalOpen, setMenuModalOpen] = useState(false);
   return (
     <>
       <Head>
@@ -15,8 +15,11 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className="h-screen w-screen relative bg-mainBlue">
-        <Nav />
+      <main className="h-fit w-screen relative">
+        <div className="mx-auto ">
+          <Nav />
+          <Hero />
+        </div>
       </main>
     </>
   );

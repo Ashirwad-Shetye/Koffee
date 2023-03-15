@@ -1,9 +1,6 @@
 import React from "react";
-import Image from "next/image";
 import Link from "next/link";
-import { IoClose } from "react-icons/io5";
 import { motion } from "framer-motion";
-import { BiSearchAlt } from "react-icons/bi";
 
 const itemVariants = {
   closed: {
@@ -34,63 +31,25 @@ const menuLinks = [
   { path: "/", title: "contact" },
 ];
 
-function MenuModal({ setMenuModalOpen }: any) {
-  const handleClose = () => {
-    setMenuModalOpen(false);
-  };
+function MenuModal() {
   return (
     <motion.div
       initial={{ height: 0 }}
       animate={{
-        height: 400,
+        height: 150,
       }}
       exit={{
         height: 0,
         transition: { delay: 0.7, duration: 0.3 },
       }}
-      className="absolute top-0 w-screen bg-white h-fit shadow-xl"
+      className="w-fit h-fit flex justify-center items-center bg-navGreen rounded-xl"
     >
-      <div className="px-5 flex items-center h-20 justify-between">
-        <div className="w-16">
-          <Link href={"/"}>
-            <Image
-              src={"/logo/logo.png"}
-              alt="logo-koffee store"
-              width={200}
-              height={200}
-            />
-          </Link>
-        </div>
-        <div
-          onClick={handleClose}
-          className="text-4xl text-textBlue1 hover:scale-110 cursor-pointer duration-150"
-        >
-          <IoClose />
-        </div>
-      </div>
       <motion.div
         initial="closed"
         animate="open"
         exit="closed"
         variants={sideVariants}
-        className="bg-mainBlue w-10/12 mx-auto h-10 rounded-full flex items-center"
-      >
-        <div className="text-xl text-gray-600 mx-5">
-          <BiSearchAlt />
-        </div>
-        <input
-          type="text"
-          maxLength={80}
-          placeholder="Search here..."
-          className="bg-transparent h-10 rounded-r-full w-full focus:outline-none focus:ring-1 focus:ring-transparent pr-5"
-        />
-      </motion.div>
-      <motion.div
-        initial="closed"
-        animate="open"
-        exit="closed"
-        variants={sideVariants}
-        className="mx-5 my-10 space-y-10 text-xl"
+        className="mx-5 h-full flex flex-col justify-around"
       >
         {menuLinks.map(({ path, title, id }: any) => (
           <motion.div variants={itemVariants} key={id}>
