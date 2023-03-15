@@ -20,7 +20,7 @@ function Nav() {
     menuModalOpen ? setMenuModalOpen(false) : setMenuModalOpen(true);
   };
   return (
-    <div className="pt-5 z-50 relative">
+    <div className="z-50 relative mt-5 mx-5">
       <div className="px-5 bg-navGreen h-16 flex justify-between items-center rounded-xl">
         <div className="w-12 md:w-16">
           <Link href={"/"}>
