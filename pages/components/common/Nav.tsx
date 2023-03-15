@@ -8,9 +8,9 @@ import { AnimatePresence } from "framer-motion";
 
 const menuLinks = [
   { path: "/", title: "Home" },
-  { path: "/", title: "Product" },
-  { path: "/", title: "About" },
-  { path: "/", title: "Contact" },
+  { path: "/store", title: "Product" },
+  { path: "/about", title: "About" },
+  { path: "/contact", title: "Contact" },
 ];
 
 function Nav() {
