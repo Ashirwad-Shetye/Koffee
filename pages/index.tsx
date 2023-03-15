@@ -18,7 +18,6 @@ export default function Home() {
       <main className="h-fit w-screen relative">
         <div className="mx-auto ">
           <Nav />
-          <Hero />
         </div>
       </main>
     </>
