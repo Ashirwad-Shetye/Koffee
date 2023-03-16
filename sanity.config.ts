@@ -1,9 +1,10 @@
 import {defineConfig} from 'sanity'
 import {deskTool} from 'sanity/desk'
 import {visionTool} from '@sanity/vision'
-import {schemaTypes} from './schemas'
+import { schemaTypes } from './schemas'
 
 export default defineConfig({
+  basePath: "/studio",
   name: 'default',
   title: 'koffee store',
 
