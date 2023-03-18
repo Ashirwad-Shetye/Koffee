@@ -3,6 +3,8 @@ import { Inter } from "next/font/google";
 import Nav from "./components/common/Nav";
 import Hero from "./components/home/Hero";
 
+// import { previewData } from "next/headers";
+
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
