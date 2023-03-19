@@ -9,10 +9,10 @@ function ProductsList({ products }: any) {
         {products?.map((product: any) => (
           <div
             key={product.id}
-            className="relative rounded-xl bg-gray-100 md:w-80 flex justify-around md:flex-col items-center md:justify-center"
+            className="relative md:place-self-center rounded-xl bg-gray-100 md:w-80 flex justify-around md:flex-col items-center md:justify-center"
           >
-            <div className="px-2 py-4 w-full space-y-2">
-              <div className="relative w-72 md:w-64 h-72 md:h-64 object-cover mx-auto rounded-lg overflow-hidden">
+            <div className="px-2 py-4 w-full h-[25rem] space-y-2">
+              <div className="relative w-72 h-72 object-cover mx-auto rounded-lg overflow-hidden">
                 <Image
                   src={urlFor(product.image[0]).url()}
                   alt="product image"
@@ -21,7 +21,7 @@ function ProductsList({ products }: any) {
                 />
               </div>
               <div className="space-y-2 text-center md:text-left mx-5">
-                <h1 className="text-lg font-semibold text-gray-700">
+                <h1 className="text-lg truncate h-8 font-semibold text-gray-700">
                   {product.name}
                 </h1>
                 <div className="flex justify-between max-w-[16rem] mx-auto">
